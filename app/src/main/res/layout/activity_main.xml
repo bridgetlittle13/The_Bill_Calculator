@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FD192"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/textViewAmt"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/amt"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:text="@string/money"
+            android:textColor="#7C7A7A"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/textViewPax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/pax"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editTextPax"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:text="@string/ppl"
+            android:textColor="#7C7A7A"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButtonNOSVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textOn="@string/SVS" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonGST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textOn="@string/GST" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/textViewDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/dis"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editTextDiscount"
+            android:layout_width="282dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="@string/discounted"
+            android:textColor="#7C7A7A"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonCash"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/cash" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPn"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/pn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButtonSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/split"
+            android:textOn="@string/split" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/reset"
+            android:textOn="@string/reset" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBillTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:fontFamily="monospace"
+        android:text="@string/tbill"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewBill1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:fontFamily="monospace"
+        android:text="@string/bill1"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

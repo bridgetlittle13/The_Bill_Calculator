@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">The Bill Calculator</string>
+    <string name="title">Bill Please</string>
+    <string name="amt">Amount</string>
+    <string name="money">amt</string>
+    <string name="pax">Num of Pax</string>
+    <string name="ppl">num of pax</string>
+    <string name="dis">Discount(%)</string>
+    <string name="discounted">discount in percentage</string>
+    <string name="SVS">NO SVS</string>
+    <string name="GST">GST</string>
+    <string name="split">SPLIT</string>
+    <string name="reset">RESET</string>
+    <string name="cash">Cash</string>
+    <string name="pn">PayNow</string>
+    <string name="tbill">Total Bill: </string>
+    <string name="bill1">Each Person Pays:</string>
+</resources>
